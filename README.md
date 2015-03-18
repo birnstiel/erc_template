@@ -10,4 +10,6 @@ This repository contains a template for an [ERC starting grant](http://erc.europ
 
 # Disclaimer
 
-This repository is under MIT license. Use it at own risk and make sure that you follow all the guidelines of future ERC calls, which might look different than this template.
+This repository is published under the [MIT license]
+(https://raw.githubusercontent.com/birnstiel/erc_template/master/LICENSE.md).
+Use it at own risk and make sure that you follow all the guidelines of future ERC calls, which might look different than this template.
