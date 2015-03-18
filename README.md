@@ -1,7 +1,7 @@
 # ERC Starting Grant Template
 *by Tilman Birnstiel*
 
-This repository contains a template for an [ERC starting grant](http://erc.europa.eu/starting-grants) proposal, based on the 2015 call for proposals. Included are:
+This repository contains my own personal template for an [ERC starting grant](http://erc.europa.eu/starting-grants) proposal, based on the 2015 call for proposals. Included are:
 
 - the template `tex`-files for Part B1 and Part B2 of the proposal including some auxiliary files (bibliography files, header, ...).
 - the template commitment letter for the host institution.
@@ -10,6 +10,5 @@ This repository contains a template for an [ERC starting grant](http://erc.europ
 
 # Disclaimer
 
-This repository is published under the [MIT license]
-(https://raw.githubusercontent.com/birnstiel/erc_template/master/LICENSE.md).
-Use it at own risk and make sure that you follow all the guidelines of future ERC calls, which might look different than this template.
+This repository is published under the [MIT license](https://raw.githubusercontent.com/birnstiel/erc_template/master/LICENSE.md).
+Use it at own risk and make sure that you follow all the guidelines of future ERC calls, which might look different than this template. This is *not* an official template from the ERC.
