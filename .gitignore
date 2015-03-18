@@ -1,0 +1,14 @@
+drafts/
+documents/
+summary_ascii.txt
+.project
+.settings/
+.texlipse
+*.aux
+*.out
+*.log
+*.synctex.gz
+*.blg
+erc_B1_birnstiel.pdf
+erc_B2_birnstiel.pdf
+Commitment_of_HI.pdf
