@@ -12,3 +12,7 @@ This repository contains my own personal template for an [ERC starting grant](ht
 
 This repository is published under the [MIT license](https://raw.githubusercontent.com/birnstiel/erc_template/master/LICENSE.md).
 Use it at own risk and make sure that you follow all the guidelines of future ERC calls, which might look different than this template. This is *not* an official template from the ERC.
+
+# Credit
+
+Some parts of my template, especially the title page were inspired by [ARJ's unoffiial ERC Starting Gtant LaTeX template](http://www.arj.no/2013/02/03/erc-stg-latex/).
