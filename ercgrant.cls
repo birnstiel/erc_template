@@ -143,7 +143,7 @@
 \pagestyle{fancy}
 \renewcommand{\headrulewidth}{0pt} % Remove line at top
  
-\lhead{\emph{\textcolor{red}{\@author}}}
+\lhead{\emph{\@author}}
 \chead{Part \thechapter}
 \rhead{\@acro}
 \cfoot{\thepage}
@@ -161,7 +161,7 @@
 \newcommand{\x}{\textcolor{red}{XXX}\xspace}
 \let\@acro\empty
 \newcommand{\acro}[1]{\def\@acro{#1}}
-\newcommand{\theacro}{\textsc{\textcolor{red}{\@acro}}\xspace}
+\newcommand{\theacro}{\textsc{\@acro}\xspace}
 \newcommand{\proposal@duration}{60 Months}
 \let\@institution\empty
 \newcommand{\institution}[1]{\def\@institution{#1}}
@@ -190,7 +190,7 @@ Research proposal [Part B1] }
 }
 \vfill
 %
-\LARGE{\textsc{\textcolor{red}{\@title}}}
+\LARGE{\textsc{\@title}}
 %
 \vfill
 %
