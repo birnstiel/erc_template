@@ -15,4 +15,5 @@ Use it at own risk and make sure that you follow all the guidelines of future ER
 
 # Credit
 
-Some parts of my template, especially the title page were inspired by [ARJ's unoffiial ERC Starting Gtant LaTeX template](http://www.arj.no/2013/02/03/erc-stg-latex/).
+- Some parts of my template, especially the title page were inspired by [ARJ's unoffiial ERC Starting Gtant LaTeX template](http://www.arj.no/2013/02/03/erc-stg-latex/).
+- Packaging all fromatting commands and more into a `.cls` file was pulled in from @pdebuyl-lab's fork.
