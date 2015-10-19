@@ -1,3 +1,4 @@
+*~
 drafts/
 documents/
 summary_ascii.txt
@@ -9,6 +10,6 @@ summary_ascii.txt
 *.log
 *.synctex.gz
 *.blg
-erc_B1_birnstiel.pdf
-erc_B2_birnstiel.pdf
+erc_B1.pdf
+erc_B2.pdf
 Commitment_of_HI.pdf
