@@ -145,7 +145,7 @@
  
 \lhead{\emph{\@author}}
 \chead{Part \thechapter}
-\rhead{\@acro}
+\rhead{\theacro}
 \cfoot{\thepage}
 
 \newenvironment{itemize*}%
