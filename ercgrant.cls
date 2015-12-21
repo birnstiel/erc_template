@@ -46,7 +46,6 @@
 \definecolor{darkgreen} {rgb} {0.37,0.72,0.17}
 \definecolor{lightgreen}{rgb} {0.56,0.88,0.28}
 \RequirePackage[%
-  pdfauthor={Tilman Birnstiel},%
   pdfstartview=FitH,%
   breaklinks=true,%
   bookmarks=true,%
@@ -58,7 +57,14 @@
   menucolor=black,%
   urlcolor=darkblue%
   ]{hyperref}
-  
+
+\AtBeginDocument{%
+  \hypersetup{%
+    pdfauthor={\@author},%
+    pdftitle={ERC proposal - \@title}%
+  }
+}
+
 
 % ========== BIBLIOGRAPHY STUFF ============
 
