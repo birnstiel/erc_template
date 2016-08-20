@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{my_cv}[2011/03/26 My custom CV class]
+\ProvidesClass{ercgrant}[2011/03/26 My custom ERCgrant class]
 
 \let\@firstchapter\@empty
 
