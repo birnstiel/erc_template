@@ -65,6 +65,9 @@
   }
 }
 
+\DeclareOldFontCommand{\bf}{\normalfont\bfseries}{\mathbf}
+
+\RequirePackage[parfill]{parskip}
 
 % ========== BIBLIOGRAPHY STUFF ============
 
@@ -74,31 +77,31 @@
 \setlength{\bibsep}{0.0cm}
 
 % ========== SECTION FORMATTING ============
-\RequirePackage{titlesec}
 \renewcommand\thesection{\alph{section}}
 %###
-\titleformat{\section}{\Large\bfseries}{Section \thesection: }{0em}{}
+\RedeclareSectionCommand[font=\bfseries\Large]{section}
+\renewcommand*{\sectionformat}{Section \thesection:\enskip}
 %###
 
 %###
 % have the chapter on the same page
-\titleclass{\chapter}{straight}
+\RedeclareSectionCommand[style=section]{chapter}
 % calling the chapters B1, B2, \ldots
 \renewcommand{\thechapter}{B\arabic{chapter}}
-\titleformat{\chapter}{\Large\bfseries}{Part \thechapter: }{0em}{}
+\RedeclareSectionCommand[font=\bfseries\Large]{chapter}
+\renewcommand*{\chapterformat}{Part \thechapter:\enskip}
 %###
 % 
 % save space between section headings, and after figures
 % 
 %###
-\titlespacing*{\chapter}      {0pt}{1.5ex}{1ex}
-\titlespacing*{\section}      {0pt}{1.5ex}{1ex}
-\titlespacing*{\subsection}   {0pt}{1.5ex}{0.8ex}
-\titlespacing*{\subsubsection}{0pt}{1.5ex}{0.8ex}
-\titlespacing*{\paragraph}    {0pt}{1.0ex}{0.8ex}
-\setlength{\belowcaptionskip}{-0.5cm}
-%###
+\setlength{\belowcaptionskip}{0.0cm}
 
+\RedeclareSectionCommands[indent=0pt, beforeskip=0.2em, afterskip=0.3em]{chapter,section}
+\RedeclareSectionCommands[indent=0pt, beforeskip=0.2em, afterskip=0.2em]{subsection,subsubsection,paragraph}
+
+
+%###
 
 % === FIGURE AND CAPTION STUFF ====
 \RequirePackage[font=small]{caption}
