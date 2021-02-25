@@ -10,6 +10,9 @@ summary_ascii.txt
 *.log
 *.synctex.gz
 *.blg
+*.bbl
+*.fdb_latexmk
+*.fls
 erc_B1.pdf
 erc_B2.pdf
 Commitment_of_HI.pdf

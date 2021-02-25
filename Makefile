@@ -5,6 +5,9 @@ AUX_PDF	  =
 OTHERS    = Commitment_of_HI.pdf summary_ascii.txt pub_list.tex
 TEX       = pdflatex
 BIBTEX    = bibtex 
+SUPERVISOR = Dullemond
+BIBCODES = bibcodes.txt
+HIGHLIGHTS = highlights.txt
 VPATH     = figures
 OUTDIR    = tmp
 RELREF    = bibliography
@@ -28,7 +31,8 @@ count: summary_ascii.txt
 others: $(OTHERS)
 
 pub_list.tex: get_publist_from_bibcodes.py
-	./get_publist_from_bibcodes.py
+	./get_publist_from_bibcodes.py -o pub_list.tex -m $(HIGHLIGHTS) -c -s $(SUPERVISOR) $(BIBCODES)
+
 
 summary_ascii.txt: summary.tex 
 	-pandoc ${@:_ascii.txt=.tex} -o $@
