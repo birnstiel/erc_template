@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{ercgrant}[2011/03/26 My custom ERCgrant class]
+\ProvidesClass{ercgrant}[2021/12/15 My custom ERCgrant class]
 
 \let\@firstchapter\@empty
 
@@ -9,6 +9,12 @@
 \isBtwotrue
 \def\@firstchapter{1}%
 }
+
+\newcommand{\proposaltype}{Starting Grant}
+\DeclareOption{STG}{\renewcommand{\proposaltype}{Consolidator Grant}}
+\DeclareOption{COG}{\renewcommand{\proposaltype}{Consolidator Grant}}
+\DeclareOption{ADG}{\renewcommand{\proposaltype}{Advanced Grant}}
+\newcommand{\callyear}{2022}
 
 \ProcessOptions
 
@@ -184,7 +190,7 @@
 \ifisBtwo
 \renewcommand{\maketitle}{%
 \begin{center}
-\LARGE{\textbf{ERC Starting Grant 2016\\
+\LARGE{\textbf{ERC \proposaltype~\callyear\\
 Research proposal [Part B2] }
 }
 \end{center}
@@ -194,7 +200,7 @@ Research proposal [Part B2] }
 \renewcommand{\maketitle}{%
 \begin{center}
 \makeatletter
-\LARGE{\textbf{ERC Starting Grant 2016\\
+\LARGE{\textbf{ERC \proposaltype~\callyear\\
 Research proposal [Part B1] }
 }
 \vfill
