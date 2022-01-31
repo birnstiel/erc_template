@@ -47,6 +47,7 @@ articles = [list(ads.SearchQuery(
     bibcode=bibcode,
     fl=['author', 'first_author', 'bibcode', 'id', 'year', 'title', 'citation_count', 'pub', 'bibtex', 'page', 'volume'],
 ))[0] for bibcode in bibcodes]
+
 #
 # write results
 #
@@ -70,11 +71,7 @@ with open(file_name, 'w') as f:
             values['pub'] = article.pub
 
         # full author list: get only the last names
-
-        # authors = [a.split(',')[0] for a in article.author]
-
-        authors = (''.join(article.bibtex.split('author = {')[1].split('=')[0].split('\n')[:-1])).split(' and ')
-        authors = [a.split(',')[0].strip()[1:-1] for a in authors]
+        authors = [author.split(",")[0] for author in article.author]
         all_authors = authors.copy()
 
         if ARGS.author is not None and ARGS.author in authors:
