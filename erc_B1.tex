@@ -1,8 +1,9 @@
+%PUT STG, COG, ADG as option
 \documentclass[STG]{ercgrant}
-
+% put here the year of the call
 \renewcommand{\callyear}{2050}
 
-\author{\textcolor{red}{Dr. John Doe}}
+\author{\textcolor{red}{Dr. Jane/John Doe}}
 \acro{\textcolor{red}{ACRONYM}}
 \title{\textcolor{red}{PROJECT TITLE}}
 \institution{\textcolor{red}{Example Institute}}
@@ -23,12 +24,12 @@
 
 \section{Extended Synopsis of the Scientific Proposal}
 
-\subsection*{\textcolor{red}{General Background}}
+\subsection{\textcolor{red}{General Background}}
 
 \textcolor{red}{\blindtext[2]}
 
 
-\subsection*{\textcolor{red}{Some Subsection}}
+\subsection{\textcolor{red}{Some Subsection}}
 
 
 \textcolor{red}{\blindtext[2]}
@@ -45,19 +46,19 @@
 
 \textcolor{red}{\blindtext[2]}
 
-\subsection*{\textcolor{red}{Subsection about the Project}}
+\subsection{\textcolor{red}{Subsection about the Project}}
 
 \textcolor{red}{\blindtext[2]}
 
-\subsubsection*{\textcolor{red}{Some Subsubsection}}
+\subsubsection{\textcolor{red}{Some Subsubsection}}
 
 \textcolor{red}{\blindtext[2]}
 
-\subsection*{\textcolor{red}{Other Subsection}}
+\subsection{\textcolor{red}{Other Subsection}}
 
 \textcolor{red}{\blindtext[2]}
 
-\subsection*{\textcolor{red}{Summary Section}}
+\subsection{\textcolor{red}{Summary Section}}
 
 \textcolor{red}{\blindtext[2]}
 
@@ -66,7 +67,7 @@
 % REMOVE THIS!!!!
 \nocite{*} % to cite everything
 
-\renewcommand\bibsection{\subsection*{\refname}}
+\renewcommand\bibsection{\subsection{\refname}}
 \begin{small}
 	\bibliographystyle{aa}
 	\bibliography{bibliography}
@@ -76,119 +77,143 @@
 \newpage
 \section{Curriculum vitae}
 
-\subsection*{Personal Information}
+\subsection{Personal Information}
 \begin{tabular}{p{5cm}l}
-	Last name, first name: & \textcolor{red}{Doe, John} \\[0.1cm]
+	Last name, first name: & \textcolor{red}{Doe, John} \\
+	ORCID:                 & \textcolor{red}{fill}      \\
 	Address:               & \textcolor{red}{Institute} \\
 	                       & \textcolor{red}{Street}    \\
-	                       & \textcolor{red}{Place}     \\[0.1cm]
-	Nationality:           & \textcolor{red}{fill}      \\[0.1cm]
-	Date of birth:         & \textcolor{red}{fill}      \\[0.1cm]
-	Place of birth:        & \textcolor{red}{fill}      \\[0.1cm]
-	%###
-	Website:               & \textcolor{red}{fill}      \\[0.1cm]
-	%###
-	ORCID:                 & \textcolor{red}{fill}
+	                       & \textcolor{red}{Place}     \\
+	Date of birth:         & \textcolor{red}{fill}      \\
+	Nationality:           & \textcolor{red}{fill}      \\
+	Website:               & \textcolor{red}{fill}      \\
 \end{tabular}
 
-\subsection*{Positions}
+\subsection{Education}
+\color{red}
+\begin{tabular}{p{2cm}p{12cm}}
+	20..
+	 & \textbf{\textcolor{red}{Ph.D. Astronomy, A University}} \\
+	 & Thesis: \textit{\textcolor{red}{fill}}                  \\
+	 & Advisor: \textit{\textcolor{red}{fill}}
+\end{tabular}
+\color{black}
+
+\subsection{Current Position}
+\color{red}
+\begin{tabular}{p{2cm}p{12cm}}
+	since 20..
+	 & \textbf{Barista} at Institute \\
+	 & City, Some Country
+\end{tabular}
+\color{black}
+
+\subsection{Previous Positions}
+\color{red}
+\begin{tabular}{p{2cm}p{12cm}}
+	20.. -- 20..
+	             & \textbf{Research Associate} at Institute            \\
+	             & City, Somecountry                                   \\
+	20.. -- 20.. & \textbf{Postdoctoral Researcher} at other Institute \\
+	             & Town, Other Country                                 \\
+\end{tabular}
+\color{black}
+
+\subsection{Fellowships and Awards}
+\color{red}
 \begin{itemize}
-	\item \textbf{Postdoctoral Fellow}\hfill \textcolor{red}{from} -- \textcolor{red}{til}\\
-	      at \textcolor{red}{fill}\\
-	      \textcolor{red}{place}\\
-	      Advisor: \textit{\textcolor{red}{fill}}\\[-0.75em]
-	\item \textbf{Postdoctoral Researcher} \hfill \textcolor{red}{from} -- \textcolor{red}{til}	\\
-	      at \textcolor{red}{fill}\\
-	      Advisor: \textit{\textcolor{red}{fill}}
+	\item A
+	\item B
 \end{itemize}
+\color{black}
 
-\subsection*{Education}
-\begin{itemize}
-	\item \textbf{\textcolor{red}{Ph.D. Astronomy, A University}}		 \hfill \textcolor{red}{date}\\
-	      Thesis: \textit{\textcolor{red}{fill}}\\
-	      Advisor: \textit{\textcolor{red}{fill}}\\[-0.75em]
-\end{itemize}
-
-\subsection*{Teaching}
-
-\subsection*{Other Achievements}
-
-
-\subsection*{Other Services}
-
-\subsection*{Major Collaborations}
-\vspace*{1em}
-{\small
-	\begin{tabular}{p{6cm}p{7cm}}
-		\textbf{\textcolor{red}{Prof. A}} & \textbf{\textcolor{red}{Prof. B}} \\
-		\textcolor{red}{Institute}        & \textcolor{red}{Institute}        \\
-		phone: \textcolor{red}{fill}      & phone: \textcolor{red}{fill}      \\
-		email: \textcolor{red}{fill}      & email: \textcolor{red}{fill}      \\
-		\\[-0.1cm]
-		\textbf{\textcolor{red}{Prof. X}} & \textbf{\textcolor{red}{Prof. Y}} \\
-		\textcolor{red}{Institute}        & \textcolor{red}{Institute}        \\
-		phone: \textcolor{red}{fill}      & phone: \textcolor{red}{fill}      \\
-		email: \textcolor{red}{fill}      & email: \textcolor{red}{fill}      \\
-	\end{tabular}
-}
+\subsection{Supervision Of Graduate Students And Postdoctoral Fellows}
+\subsection{Teaching Activities}
+\subsection{Organization of Scientific Meetings}
+\subsection{Institutional Responsibilities}
+\subsection{Reviewing Activities}
+\subsection{Memberships of Scientific Societies}
+\subsection{Major Collaborations}
+\subsection{Career Breaks}
+\subsection{Covid-19 Impact to Scientific Productivity}
 
 %%%%%%%%%%%%% APPENDIX %%%%%%%%%%%%%%%%%%%
 \newpage
 \section*{Appendix:\\ All ongoing and submitted grants and funding of the PI (Funding ID)}
-\subsection*{On-going Grants}
+\subsection{On-going Grants}
+\color{red}
 \begin{footnotesize}
 	\def\arraystretch{1.5}
-	\begin{tabular}{|p{3.9cm}|p{1.6cm}|p{1.5cm}|p{2.4cm}|p{2.7cm}|p{2.2cm}|}
+	\begin{tabular}{|p{3.9cm}|p{2.5cm}|p{1.4cm}|p{2.cm}|p{1.6cm}|p{1.8cm}|}
 		\hline
-		\rowcolor{black!20}\bf Project Title & \bf  Funding source   & \bf  Amount\newline(Euros)                             & \bf
-		Period                               & \bf Role of the PI    & \bf Relation to \newline current ERC \newline proposal       \\
+		\rowcolor{black!20}
+		\textbf{Project Title}         &
+		\textbf{Funding source}        &
+		\textbf{Amount\newline(Euros)} &
+		\textbf{Period}                &
+		\textbf{Role of the PI}        &
+		\textbf{Relation to \newline current ERC \newline proposal}          \\
 		\hline
-		\textcolor{red}{fill}                & \textcolor{red}{fill} & \textcolor{red}{\EUR{1}}                               &
-		\textcolor{red}{fill}                & \textcolor{red}{fill} & \textcolor{red}{fill}                                        \\
+		fill                           & fill & \EUR{1} & fill & fill & fill \\
 		\hline
 	\end{tabular}
 \end{footnotesize}
+\color{black}
 
-
-\subsection*{Applications}
+\subsection{Applications}
+\color{red}
 \begin{footnotesize}
 	\def\arraystretch{1.5}
-	\begin{tabular}{|p{3.9cm}|p{1.6cm}|p{1.5cm}|p{2.4cm}|p{2.7cm}|p{2.2cm}|}
+	\begin{tabular}{|p{3.9cm}|p{2.5cm}|p{1.4cm}|p{2.cm}|p{1.6cm}|p{1.8cm}|}
 		\hline
-		\rowcolor{black!20} \bf Project Title & \bf  Funding source   & \bf
-		Amount\newline(Euros)                 & \bf Period            & \bf Role of the PI       & \bf Relation to \newline current ERC \newline proposal                                                 \\
+		\rowcolor{black!20}
+		\textbf{Project Title}         &
+		\textbf{Funding source}        &
+		\textbf{Amount\newline(Euros)} &
+		\textbf{Period}                &
+		\textbf{Role of the PI}        &
+		\textbf{Relation to \newline current ERC \newline proposal}          \\
 		\hline
-		\textcolor{red}{fill}                 & \textcolor{red}{fill} & \textcolor{red}{\EUR{1}} & \textcolor{red}{fill}                                  & \textcolor{red}{fill} & \textcolor{red}{fill}
-		\\
+		fill                           & fill & \EUR{1} & fill & fill & fill \\
 		\hline
 	\end{tabular}
 \end{footnotesize}
+\color{black}
 
 %%%%%%%%%%%%% APPENDIX %%%%%%%%%%%%%%%%%%%
 \newpage
 \section{Early achievements track-record}
 
-\subsection*{Refereed Publications in Major Journals}
+\subsection{Refereed Publications in Major Journals}
+\color{red}
 Items starting with a solid symbol ($\bullet$, \fstar) are publications without the PhD advisor as
 co-author, others ($\circ$, \ostar) include the PhD advisor as co-author. Highlighted papers are
 marked with a star symbol (\ostar, \fstar).\\
+\color{black}
 
+\color{red}
 \begin{itemize}[topsep=0pt,itemsep=0.62ex,partopsep=0ex,parsep=0.5ex]
-	\input{pub_list.tex}
+	\item INCLUDE YOUR PUBLICATION LIST HERE
+	      % \input{pub_list.tex}
 \end{itemize}
+\color{black}
 
-\subsection*{Talks}
-\subsubsection*{\textit{Selected Colloquia}}
+\subsection{Talks}
+\subsubsection{\textit{Selected Colloquia}}
 
+\color{red}
 \begin{longtable}{p{7.5cm}p{6cm}l}
-	\textcolor{red}{Seminar} & \textcolor{red}{A University} & \textcolor{red}{date} \\
-	\textcolor{red}{Seminar} & \textcolor{red}{B University} & \textcolor{red}{date} \\
+	Seminar & A University & date \\
+	Seminar & B University & date \\
 \end{longtable}
+\color{black}
 
-\subsubsection*{\textit{Selected Conference Talks}}
+\subsection{\textit{Selected Conference Talks}}
 
+\color{red}
 \begin{longtable}{p{7.5cm}p{6cm}l}
-	\textcolor{red}{Invited review on Blabla} & \textcolor{red}{City} & \textcolor{red}{date} \\
+	Invited review on Blabla & City & date \\
 \end{longtable}
+\color{black}
 
 \end{document}

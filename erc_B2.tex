@@ -1,6 +1,9 @@
-\documentclass[B2]{ercgrant}
+%AGAIN: put STG, COG, or ADG here depending on the call
+\documentclass[B2,COG]{ercgrant}
+% put here the year of the call
+\renewcommand{\callyear}{2050}
 
-\author{\textcolor{red}{Dr. John Doe}}
+\author{\textcolor{red}{Dr. Jane/John Doe}}
 \acro{\textcolor{red}{ACRONYM}}
 \title{\textcolor{red}{PROJECT TITLE}}
 \institution{\textcolor{red}{Example Institute}}
@@ -19,91 +22,32 @@
 %%%%%%%%%%%%% STATE-OF-THE-ART %%%%%%%%%%%%%%%%%%%
 \section{State-of-the-art and objectives}\label{sec:stateofart}
 
+\color{red}
 % -----------------------------------------------------------------------------
-\subsection*{\textcolor{red}{Introduction}}\label{sec:stateofart:intro}
+\subsection{\textcolor{red}{Introduction}}\label{sec:stateofart:intro}
 % -----------------------------------------------------------------------------
-\textcolor{red}{\blindtext[5]}
-
-
-% -----------------------------------------------------------------------------
-\subsection*{\textcolor{red}{Subsection}}\label{sec:stateofart:subsection}
-% -----------------------------------------------------------------------------
-\textcolor{red}{\blindtext[2]}
-
-\textcolor{red}{\blindtext[2]}
-
+\blindtext[5]
 
 % -----------------------------------------------------------------------------
-\subsection*{\textcolor{red}{Summary}}\label{sec:stateofart:summary}
+\subsection{\textcolor{red}{Subsection}}\label{sec:stateofart:subsection}
 % -----------------------------------------------------------------------------
-\textcolor{red}{\blindtext[5]}
+\blindtext[2]
 
+\blindtext[2]
+
+% -----------------------------------------------------------------------------
+\subsection{\textcolor{red}{Summary}}\label{sec:stateofart:summary}
+% -----------------------------------------------------------------------------
+\blindtext[2]
+\color{black}
 
 %%%%%%%%%%%%% METHODOLOGY %%%%%%%%%%%%%%%%%%%
 \section{Methodology}
-\textcolor{red}{\blindtext[5]}
-
-\subsection*{\textcolor{red}{General Methodology}}
-
-\textcolor{red}{\blindtext[2]}
-
-% ---------------------------------------------------------
-\subsection*{\textcolor{red}{Detailed Work Plan}}
-
-\subsubsection{\textcolor{red}{Research group leader (5 years)}}
-
-\paragraph*{\textcolor{red}{Year 1:}} \textcolor{red}{\blindtext[5]}
-
-\textcolor{red}{\ldots}
-
-% ---------------------------------------------------------
-\subsection*{\textcolor{red}{Collaborations and the Host Institution}}
-
-\textcolor{red}{\blindtext[2]}
+\color{red}
+\blindtext[2]
 
 
 % ---------------------------------------------------------
-
-%%%%%%%%%%%%% BUDGET %%%%%%%%%%%%%%%%%%%
-\section{Resources (including project costs)}\label{sec:budget}
-In the following, I will discuss the funding needs of this proposal. An overview of all costs and
-the total budget including overheads is shown in Table~\ref{tab:budget}.
-
-%###
-\paragraph{\textcolor{red}{Personnel}}
-%###
-
-\textcolor{red}{\blindtext[1]}
-
-%###
-\paragraph{\textcolor{red}{Equipment}}
-%###
-
-\textcolor{red}{\blindtext[2]}
-
-\textcolor{red}{\ldots}
-
-
-\begin{table}[h]
-    \begin{center}
-        \missingfigure[figwidth=0.8\hsize]{Put figure here}
-
-        \setlength{\arrayrulewidth}{1.35pt}
-        \def\arraystretch{1.5}
-        \begin{tabular}{|p{0.634\hsize}|C{0.108\hsize}|}
-            %\Xhline{2\arrayrulewidth}
-            \hline
-            \textbf{For the above cost table, please indicate the \% of working time
-                the PI dedicates to the project over the period of the grant:}
-             & \textbf{\textcolor{red}{200}\%} \\
-            \hline
-            % \Xhline{2\arrayrulewidth}
-        \end{tabular}
-        \caption{Summary of all eligible costs and total project cost estimate. All numbers are rounded to
-            whole Euros.}
-        \label{tab:budget}
-    \end{center}
-\end{table}
 
 
 %%%%%%%%%%%%% BIBLIOGRAPHY %%%%%%%%%%%%%%%%%%%

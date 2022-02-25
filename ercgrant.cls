@@ -11,7 +11,7 @@
 }
 
 \newcommand{\proposaltype}{Starting Grant}
-\DeclareOption{STG}{\renewcommand{\proposaltype}{Consolidator Grant}}
+\DeclareOption{STG}{\renewcommand{\proposaltype}{Starting Grant}}
 \DeclareOption{COG}{\renewcommand{\proposaltype}{Consolidator Grant}}
 \DeclareOption{ADG}{\renewcommand{\proposaltype}{Advanced Grant}}
 \newcommand{\callyear}{2022}
@@ -25,11 +25,13 @@
 \addtocounter{chapter}{1}
 
 %%% PACKAGES %%%
+\RequirePackage[dvipsnames]{xcolor}
 \RequirePackage[english]{babel}
 \RequirePackage[right]{eurosym}
 \setlength{\footskip}{1.45\baselineskip}
 \RequirePackage[left=2cm,top=1.5cm,bottom=1.5cm,right=2cm,includefoot,includehead]{geometry}
 \RequirePackage[utf8]{inputenc}
+\RequirePackage[T1]{fontenc}
 \RequirePackage{graphicx} 		% Add graphics capabilities
 \RequirePackage{xspace}
 \RequirePackage{blindtext}
@@ -44,7 +46,6 @@
 \newcommand{\ostar}{\raisebox{-0.12em}{\begin{scriptsize}\FiveStarOpen\end{scriptsize}}}
 
 % ========= HYPERREF & Colors ===========
-\RequirePackage{xcolor}
 \definecolor{lightgray} {gray}{0.7}
 \definecolor{darkgray}  {gray}{0.43}
 \definecolor{darkblue}  {rgb} {0,0,.65}
@@ -83,11 +84,14 @@
 \setlength{\bibsep}{0.0cm}
 
 % ========== SECTION FORMATTING ============
+% the sections have a,b,c numbering
 \renewcommand\thesection{\alph{section}}
 %###
 \RedeclareSectionCommand[font=\bfseries\Large]{section}
 \renewcommand*{\sectionformat}{Section \thesection:\enskip}
 %###
+% subsections are not numbered
+\setcounter{secnumdepth}{1}
 
 %###
 % have the chapter on the same page
@@ -120,6 +124,13 @@
 \RequirePackage{wrapfig}
 
 
+% ==== COLORED BOXES ========
+\RequirePackage{tcolorbox}
+% add 'sharp corners' as option to have sharp corners
+\newtcolorbox{cbox}[2][]{colback=#2!7!white,colframe=#2!75!black,fonttitle=\bfseries,title=#1,coltitle=white}
+\newtcolorbox{redbox}[1]{colback=red!7!white,colframe=red!75!black,fonttitle=\bfseries,title=#1}
+\newtcolorbox{greenbox}[1]{colback=Green!7!white,colframe=Green!75!black,fonttitle=\bfseries,title=#1}
+\newtcolorbox{bluebox}[1]{colback=Blue!7!white,colframe=Blue!75!black,fonttitle=\bfseries,title=#1}
 
 % ==== TABLE STUFF ===========
 \RequirePackage{makecell}
@@ -172,7 +183,7 @@
 % ============== SOME MACROS ===============
 
 \newcommand{\cont}{\textcolor{red}{\textbf{continue}}\xspace}
-\newcommand{\comment}[1]{\textcolor{red}{\textbf{#1}}\xspace}
+\renewcommand{\comment}[1]{\textcolor{red}{\textbf{#1}}\xspace}
 \newcommand{\x}{\textcolor{red}{XXX}\xspace}
 \let\@acro\empty
 \newcommand{\acro}[1]{\def\@acro{#1}}
@@ -222,7 +233,7 @@ Research proposal [Part B1] }
 \item Principal investigator (PI): \@author
 \item Host institution: \@institution
 \item Proposal full title: \@title
-\item Proposal short name: \@acro
+\item Proposal short name: \theacro
 \item Proposal duration: \proposal@duration
 \makeatother
 \end{itemize}
