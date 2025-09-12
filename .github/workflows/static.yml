@@ -33,13 +33,17 @@ jobs:
         uses: actions/checkout@v4
       - name: Copy README to index.md
         run: cp README.md index.md
-      - name: Setup Pages
+      - name: Configure Pages
         uses: actions/configure-pages@v5
+      - name: Build with Jekyll
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: .
+          destination: ./_site
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload entire repository
-          path: '.'
+          path: _site
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
