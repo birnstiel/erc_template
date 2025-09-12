@@ -36,7 +36,7 @@ jobs:
       - name: Write _config.yml with remote theme
         run: |
           cat > _config.yml << 'EOF'
-          title: ${GITHUB_REPOSITORY}
+          title: "${{ github.event.repository.name }}"
           description: "${{ github.repository }} – generated from README"
           # Use any official Pages theme, e.g. minimal, slate, hacker, cayman, etc.
           remote_theme: pages-themes/minimal@v0.2.0
